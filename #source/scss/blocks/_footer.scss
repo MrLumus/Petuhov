@@ -1,0 +1,124 @@
+@import "../base/vars";
+
+.footer {
+  &__contacts-block {
+    background-color: #496614;
+    padding: 29px 0;
+  }
+
+  &__contacts-block-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 357px;
+  }
+
+  &__logo {
+    margin-right: 20px;
+  }
+
+  &__logo-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #fff;
+  }
+
+  &__social-wrapper {
+  }
+
+  &__social-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+
+  &__social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  &__social-icon {
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 2%;
+  }
+
+  &__contacts-col {
+    flex: 0 0 49%;
+  }
+
+  &__contact-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__contact-img {
+    margin-right: 10px;
+  }
+
+  &__contact-text,
+  &__contact-text a {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #fff;
+
+    &-phone {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0em;
+    }
+  }
+
+  &__privacy,
+  &__privacy * a {
+    background-color: #f1f0ec;
+    padding: 19px 0;
+
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    color: #6e8a93;
+  }
+
+  &__privacy-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__privacy-text {
+  }
+
+  &__privacy-copyright {
+  }
+
+  &__privacy-logo {
+  }
+}

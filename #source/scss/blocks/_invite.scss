@@ -1,0 +1,246 @@
+@import "../base/vars";
+
+.invite-block {
+  padding-top: 90px;
+  background-image: url("./../../img/Invite/BG.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__sidebar {
+    flex: 0 0 472px;
+  }
+
+  &__content {
+  }
+}
+.invite-sidebar {
+  margin-left: -73px;
+  width: 100%;
+  height: 709px;
+  background-color: $accentYellow;
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transform: translateY(-100%);
+  }
+
+  &__column {
+    position: absolute;
+    left: 107px;
+    top: 36px;
+  }
+
+  &__photo {
+    position: relative;
+
+    img {
+      position: relative;
+      z-index: 1;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      left: -17px;
+      top: 100%;
+      width: 60px;
+      height: 60px;
+      background-color: #42550e;
+      transform: translateY(-100%) rotate(45deg);
+    }
+  }
+
+  &__title {
+    position: relative;
+    width: 569px;
+    height: 138px;
+    background: url("./../../img/Invite/Rec1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 135px 0 64px;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-left: -30px;
+    margin-top: -30px;
+    z-index: 1;
+  }
+}
+.invite-content {
+  padding-left: 243px;
+
+  &__header {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: $mainText;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: $greyText;
+    margin-bottom: 40px;
+  }
+
+  &__form {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: $mainText;
+
+    input,
+    textarea,
+    .invite-form__time {
+      width: 100%;
+      padding: 14px 25px;
+      border: 1px solid $lightGrey;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+    }
+  }
+}
+
+.invite-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 2%;
+  &__col {
+    flex: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__name {
+  }
+
+  &__phone {
+  }
+  &__time-wrapper {
+    cursor: pointer;
+    position: relative;
+
+    &.open {
+      .invite-form__time-list {
+        max-height: 300px;
+        border: 1px solid $lightGrey;
+      }
+
+      .invite-form__time {
+        .invite-form__time-btn {
+          &::before {
+            transform: translate(-50%, -50%) rotate(-135deg);
+          }
+        }
+      }
+    }
+  }
+
+  &__time {
+    position: relative;
+    &-btn {
+      position: absolute;
+      left: 100%;
+      top: 0;
+      transform: translateX(-100%);
+      width: 47px;
+      height: 100%;
+      background-color: $accentGreen;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transition: 0.2s;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+    }
+  }
+  &__time-list {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+    background-color: #fff;
+    width: 80%;
+    max-height: 0px;
+    border: none;
+    overflow: auto;
+    transition: 0.2s;
+  }
+  &__time-item {
+    cursor: pointer;
+    padding: 14px 25px;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: #eee;
+    }
+  }
+
+  &__text {
+    display: block;
+    width: 100%;
+    max-height: 100%;
+  }
+  &__submit {
+    cursor: pointer;
+    padding: 25px 134px;
+    background-color: $accentOrange;
+    font-family: PT Sans;
+    font-size: 35px;
+    line-height: 53px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-align: center;
+    border-radius: 50px;
+    color: #fff;
+    margin-top: 52px;
+    margin-bottom: 27px;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: $accentOrangeHover;
+    }
+  }
+
+  &__privacy {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    color: #2a2a28;
+
+    &-link {
+      font-family: Montserrat;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      color: $accentOrange;
+      text-decoration: underline;
+    }
+  }
+}

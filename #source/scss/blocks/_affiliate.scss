@@ -1,0 +1,140 @@
+@import "../base/vars";
+
+.affiliate {
+  padding: 47px 0 56px 0;
+  background-color: rgba(234, 239, 167, 0.3);
+
+  &_header {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: $mainText;
+    margin-bottom: 35px;
+  }
+
+  &__wrapper {
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__adresses {
+  }
+
+  &__map {
+  }
+}
+
+.adresses {
+  padding-right: 102px;
+  &__description {
+    margin-bottom: 42px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: $greyText;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__adress {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: $greyText;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $accentYellow;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.map {
+  position: relative;
+  img {
+    max-height: 508px;
+  }
+  &__marker {
+    width: 72px;
+    height: 72px;
+    background-color: $accentYellow;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50% 50% 0 50%;
+    transform: rotateZ(45deg);
+    box-shadow: 3.06446px 3.06446px 10.2149px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    &:hover {
+      z-index: 2;
+      transform: rotateZ(45deg) scale(1.05);
+    }
+
+    &-marker1 {
+      left: 78%;
+      top: 1%;
+      z-index: 1;
+    }
+    &-marker2 {
+      left: 73%;
+      top: 6%;
+      z-index: 1;
+    }
+    &-marker3 {
+      left: 84%;
+      top: 8%;
+      z-index: 1;
+    }
+    &-marker4 {
+      left: 69%;
+      top: 60%;
+      z-index: 1;
+    }
+    &-marker5 {
+      left: 75%;
+      top: 52%;
+      z-index: 1;
+    }
+  }
+
+  &__marker-circle {
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__marker-img {
+    transform: rotate(-45deg);
+  }
+}

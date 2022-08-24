@@ -1,0 +1,95 @@
+@import "../base/vars";
+
+.modals {
+}
+
+.modal-callback-wrapper {
+  position: fixed;
+  display: none;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #0008;
+  justify-content: center;
+  align-items: center;
+}
+.openModal {
+  display: flex;
+}
+.modal-callback {
+  padding: 50px;
+  border-radius: 20px;
+  background-color: #fff;
+  position: relative;
+
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f00;
+    transition: 0.1s;
+
+    &:hover {
+      background-color: #e00000;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      width: 50%;
+      height: 2px;
+      background-color: #fff;
+      border-radius: 2px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      width: 50%;
+      height: 2px;
+      background-color: #fff;
+      border-radius: 2px;
+    }
+  }
+
+  &_phone {
+    width: 100%;
+    display: block;
+    font-size: 25px;
+    padding: 10px 20px;
+    border: 1px solid $lightGrey;
+    box-shadow: 0 0 1px 2px $lightGrey;
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    background-color: $accentOrange;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: $accentOrangeHover;
+    }
+  }
+}

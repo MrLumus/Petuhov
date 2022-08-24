@@ -1,0 +1,114 @@
+@import "../base/vars";
+
+.steps {
+  padding-top: 90px;
+  &__header {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+    color: $mainText;
+    text-align: center;
+    margin-bottom: 47px;
+  }
+  &__shadow {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    box-shadow: 0px 0px 15px 15px rgba(50, 50, 50, 0.1);
+    background-color: rgba(50, 50, 50, 0.1);
+  }
+  &__wrapper {
+  }
+
+  &__items {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent;
+    padding-left: 26px;
+  }
+}
+.step {
+  &__item {
+    position: relative;
+    color: $mainText;
+    width: 273px;
+    height: 183px;
+    padding: 32px 41px 32px 59px;
+
+    &:not(:first-child) {
+      margin-left: -26px;
+    }
+
+    &-first {
+      width: 245px;
+      height: 183px;
+      padding: 32px 39px 17px 34px;
+      color: #fff;
+    }
+
+    &-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      z-index: 0;
+    }
+
+    &-number {
+      position: absolute;
+      z-index: 1;
+      left: 82%;
+      top: 7%;
+      transform: translate(-50%, -50%);
+      width: 39px;
+      height: 39px;
+      border: 1px solid $accentOrange;
+      border-radius: 50%;
+      background-color: $accentOrange;
+
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 29px;
+      letter-spacing: 0.02em;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-first {
+        color: $accentOrange;
+        background-color: #fff;
+        left: 80%;
+      }
+      &-last {
+        left: 95%;
+      }
+    }
+
+    &-title {
+      position: relative;
+      z-index: 1;
+
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19px;
+      letter-spacing: 0.02em;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    &-subtitle {
+      position: relative;
+      z-index: 1;
+
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0.02em;
+    }
+  }
+}

@@ -1,0 +1,188 @@
+@import "../base/vars";
+
+.partner {
+  padding: 90px 0 60px 0;
+  background-image: url("./../../img/Partner/mainBG.png");
+  background-position: 120% 80%;
+  background-repeat: no-repeat;
+
+  &__wrapper {
+  }
+
+  &__header {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: $mainText;
+    margin-bottom: 46px;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__side {
+    max-width: 475px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__list {
+    padding: 65px 39px 0 47px;
+    background-color: $accentYellow;
+    height: 667px;
+    margin-bottom: 90px;
+    position: relative;
+  }
+  &__list-img {
+    position: absolute;
+    left: 0;
+    top: 356px;
+    z-index: 1;
+  }
+
+  &__list-item {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: $greyText;
+    margin-bottom: 31px;
+    z-index: 2;
+    padding-left: 35px;
+    padding-top: 14px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 13px;
+      height: 13px;
+      background-color: $accentGreen;
+      border-radius: 50%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 35px;
+      top: 4.5px;
+      width: 171px;
+      height: 2px;
+      background-color: $accentGreen;
+    }
+  }
+
+  &__button {
+    font-family: PT Sans;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    padding: 25px 88px;
+    border-radius: 50px;
+    background-color: $accentOrange;
+  }
+
+  &__diagram-wrapper {
+    padding-left: 87px;
+    position: relative;
+  }
+
+  &__diagram {
+    position: relative;
+    img {
+      max-width: 789.6px;
+      max-height: 789.6px;
+    }
+    &-circle {
+      width: 344px;
+      height: 344px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      border-radius: 50%;
+      border: 8px solid #fff;
+      box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.2) inset;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    &-logo {
+      margin-bottom: 9px;
+    }
+    &-title {
+      font-size: 75px;
+      font-weight: 700;
+      line-height: 90px;
+      letter-spacing: 0.02em;
+      color: $accentGreen;
+    }
+    &-subtitle {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 34px;
+      letter-spacing: 0.02em;
+      color: $accentGreen;
+      max-width: 269px;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &-1 {
+      width: 259px;
+      left: 25%;
+      top: 13%;
+    }
+    &-2 {
+      width: 213px;
+      left: 68%;
+      top: 13%;
+    }
+    &-3 {
+      width: 143px;
+      left: 75%;
+      top: 50%;
+    }
+    &-4 {
+      width: 251px;
+      left: 36%;
+      top: 70%;
+    }
+    &-5 {
+      width: 175px;
+      left: 14%;
+      top: 38%;
+    }
+  }
+
+  &__text-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+
+  &__text-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #fff;
+  }
+}
