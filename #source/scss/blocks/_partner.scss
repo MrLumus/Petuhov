@@ -77,6 +77,7 @@
   }
 
   &__button {
+    cursor: pointer;
     font-family: PT Sans;
     font-size: 35px;
     font-weight: 700;
@@ -87,6 +88,11 @@
     padding: 25px 88px;
     border-radius: 50px;
     background-color: $accentOrange;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: $accentOrangeHover;
+    }
   }
 
   &__diagram-wrapper {

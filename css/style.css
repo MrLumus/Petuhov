@@ -1203,6 +1203,7 @@ h6 {
   background-color: #688223;
 }
 .partner__button {
+  cursor: pointer;
   font-family: PT Sans;
   font-size: 35px;
   font-weight: 700;
@@ -1213,6 +1214,11 @@ h6 {
   padding: 25px 88px;
   border-radius: 50px;
   background-color: #f88241;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.partner__button:hover {
+  background-color: #d56223;
 }
 .partner__diagram-wrapper {
   padding-left: 87px;
